@@ -5,7 +5,7 @@ import joblib
 
 # 1. Load the bundled model artifacts
 artifacts = joblib.load('svr_production_model.joblib')
-model = artifacts['model']
+model = artifacts['pipeline']
 brand_map = artifacts['target_mean_map']
 fallback_mean = artifacts['overall_train_mean']
 
